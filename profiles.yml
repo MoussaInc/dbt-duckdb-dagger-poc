@@ -1,0 +1,6 @@
+dagger_test:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'target/dev.duckdb'

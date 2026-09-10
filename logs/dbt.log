@@ -1,0 +1,830 @@
+[0m21:10:08.769401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2863679e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2863e74fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2863e76540>]}
+
+
+============================== 21:10:08.778688 | e7f40e1a-072b-4ab6-b2e7-df90e3c09082 ==============================
+[0m21:10:08.778688 [info ] [MainThread]: Running with dbt=1.12.4
+[0m21:10:08.779925 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'write_json': 'True', 'printer_width': '80', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'log_path': '/home/mballo/Projets/dagger-test/logs', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'target_path': 'None', 'quiet': 'False', 'use_colors': 'True', 'warn_error': 'None', 'profiles_dir': '/home/mballo/Projets/dagger-test', 'debug': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_format': 'default', 'introspect': 'True', 'no_print': 'None', 'empty': 'None', 'log_cache_events': 'False'}
+[0m21:10:08.898053 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  at path ['name']: 'dagger-test' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in /home/mballo/Projets/dagger-test/dbt_project.yml
+[0m21:10:08.900565 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.2544226, "process_in_blocks": "88", "process_kernel_time": 0.237735, "process_mem_max_rss": "107124", "process_out_blocks": "16", "process_user_time": 2.426301}
+[0m21:10:08.901778 [debug] [MainThread]: Command `cli deps` failed at 21:10:08.901478 after 0.26 seconds
+[0m21:10:08.902709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2863a276b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e28653fff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2866dff440>]}
+[0m21:10:08.903554 [debug] [MainThread]: Flushing usage events
+[0m21:10:09.811039 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:10:23.826495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7608db0a13a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7608db3f3f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7608dd4a12e0>]}
+
+
+============================== 21:10:23.831488 | 16d3f39c-fb6a-4dde-b54c-3d970eda389e ==============================
+[0m21:10:23.831488 [info ] [MainThread]: Running with dbt=1.12.4
+[0m21:10:23.832469 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'empty': 'False', 'static_parser': 'True', 'write_json': 'True', 'invocation_command': 'dbt seed --profiles-dir .', 'cache_selected_only': 'False', 'maximum_seed_size_mib': '1', 'use_experimental_parser': 'False', 'hints_enabled': 'True', 'log_format': 'default', 'log_path': '/home/mballo/Projets/dagger-test/logs', 'debug': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'quiet': 'False', 'printer_width': '80', 'profiles_dir': '.', 'no_print': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'version_check': 'True'}
+[0m21:10:24.137783 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  at path ['name']: 'dagger-test' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in /home/mballo/Projets/dagger-test/dbt_project.yml
+[0m21:10:24.139533 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.44075933, "process_in_blocks": "0", "process_kernel_time": 0.306396, "process_mem_max_rss": "140308", "process_out_blocks": "8", "process_user_time": 2.813904}
+[0m21:10:24.140421 [debug] [MainThread]: Command `dbt seed` failed at 21:10:24.140269 after 0.44 seconds
+[0m21:10:24.141114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7608db1fbd70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7608db739340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7608da723620>]}
+[0m21:10:24.141799 [debug] [MainThread]: Flushing usage events
+[0m21:10:24.895420 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-09-10T19:14:22.969462Z | 01a08cbe-166d-74e1-8539-96ca859d942d ====================
+19:14:22.971687 [info ]: dbt-fusion 2.0.0-preview.176
+19:14:22.974291 [info ]: Started loading project
+19:14:22.988196 [info ]: Loading profiles.yml
+19:14:23.008426 [debug]:    Started loading packages
+19:14:23.013500 [debug]:     Loaded [  0.01s] packages
+19:14:23.015597 [info ]: Finished loading project [  0.04s]
+19:14:23.016225 [info ]: Started parsing
+19:14:23.109600 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.01s]
+19:14:23.110528 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:14:23.115134 [info ]: Finished parsing [  0.10s]
+19:14:23.117420 [info ]: Started scheduling
+19:14:23.117576 [info ]: Finished scheduling [  0.00s]
+19:14:23.336750 [info ]: Started building task graph
+19:14:23.337515 [info ]: Finished building task graph [  0.00s]
+19:14:23.574442 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+19:14:23.581105 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+19:14:23.583199 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+19:14:23.584368 [info ]: Started rendering (1 nodes)
+19:14:23.585187 [info ]: Started seed main.raw_orders
+19:14:23.585214 [debug]: Started rendering seed main.raw_orders
+19:14:23.585750 [debug]: Finished rendering [  0.00s] seed main.raw_orders [success]
+19:14:23.585816 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+19:14:23.585863 [info ]: Started running (1 nodes)
+19:14:23.585919 [info ]: Started running seed main.raw_orders
+19:14:23.640835 [debug]: Query executed on node seed.dagger_test.raw_orders:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main'
+19:14:23.651691 [debug]: Query executed on node seed.dagger_test.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.dagger_test.raw_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    create table "dev"."main"."raw_orders" ("order_id" bigint,"customer_id" bigint,"order_date" date,"amount" double,"status" varchar)
+  
+19:14:23.685958 [debug]: Query executed on node seed.dagger_test.raw_orders:
+
+          COPY "dev"."main"."raw_orders" FROM '/home/mballo/Projets/dagger_test/seeds/raw_orders.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+19:14:23.688385 [debug]: Writing runtime SQL for node "seed.dagger_test.raw_orders"
+19:14:23.692385 [info ]: Finished running [  0.11s] seed main.raw_orders [success]
+19:14:23.692495 [info ]: Finished running [  0.11s] (1 nodes, 0 skipped, 0 errors)
+19:14:23.692534 [info ]:  Succeeded [  0.11s] seed  main.raw_orders (table)
+19:14:23.938163 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:14:24.022358 [info ]: 
+==================== Execution Summary =====================
+Finished 'seed' successfully for target 'dev' [1.1s]
+Processed: 1 seed
+Summary: 1 total | 1 success
+==================== 2026-09-10T19:14:40.404294Z | 01a08cbe-5a92-7741-8c66-4fd3455f0bd5 ====================
+19:14:40.404446 [info ]: dbt-fusion 2.0.0-preview.176
+19:14:40.404771 [info ]: Started loading project
+19:14:40.405907 [info ]: Loading profiles.yml
+19:14:40.416693 [debug]:    Started loading packages
+19:14:40.417997 [debug]:     Loaded [  0.00s] packages
+19:14:40.419436 [info ]: Finished loading project [  0.01s]
+19:14:40.420006 [info ]: Started parsing
+19:14:40.482746 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.00s]
+19:14:40.483754 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:14:40.488218 [info ]: Finished parsing [  0.07s]
+19:14:40.488773 [info ]: Started scheduling
+19:14:40.488972 [info ]: Finished scheduling [  0.00s]
+19:14:40.492963 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "dev", schema: "main", table: "raw_orders" }) and interval: None
+19:14:40.718094 [info ]: Started building task graph
+19:14:40.718328 [info ]: Finished building task graph [  0.00s]
+19:14:40.755631 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+19:14:40.757542 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+19:14:40.758518 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+19:14:40.758804 [info ]: Started rendering (2 nodes)
+19:14:40.758900 [info ]: Started model main.stg_orders
+19:14:40.758918 [debug]: Started rendering model main.stg_orders
+19:14:40.759902 [debug]: Compiled SQL for node model.dagger_test.stg_orders at target/compiled/dagger_test/models/staging/stg_orders.sql
+19:14:40.760087 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+19:14:40.760195 [info ]: Started analyzing (2 nodes)
+19:14:40.760241 [debug]: Started analyzing model main.stg_orders
+19:14:40.767662 [debug]: Finished analyzing [  0.01s] model main.stg_orders [success]
+19:14:40.767780 [info ]: Started running (2 nodes)
+19:14:40.767984 [info ]: Started running model main.stg_orders
+19:14:40.800177 [debug]: Query executed on node model.dagger_test.stg_orders:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main'
+19:14:40.803348 [debug]: Writing runtime sql for node "model.dagger_test.stg_orders"
+19:14:40.807402 [debug]: Query executed on node model.dagger_test.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.stg_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+  
+  create view "dev"."main"."stg_orders__dbt_tmp" as (
+    select
+    order_id,
+    customer_id,
+    order_date,
+    amount,
+    status
+from "dev"."main"."raw_orders"
+  );
+
+19:14:40.812770 [debug]: Query executed on node model.dagger_test.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.stg_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      alter view "dev"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+    
+19:14:40.816220 [debug]: Query executed on node model.dagger_test.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.stg_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      drop view if exists "dev"."main"."stg_orders__dbt_backup" cascade
+    
+19:14:40.817161 [info ]: Finished running [  0.05s] model main.stg_orders [success]
+19:14:40.817301 [info ]:  Succeeded [  0.06s] model main.stg_orders (view)
+19:14:40.817388 [info ]: Started model main.mart_customer_revenue
+19:14:40.817412 [debug]: Started rendering model main.mart_customer_revenue
+19:14:40.818401 [debug]: Compiled SQL for node model.dagger_test.mart_customer_revenue at target/compiled/dagger_test/models/marts/mart_customer_revenue.sql
+19:14:40.818554 [debug]: Finished rendering [  0.00s] model main.mart_customer_revenue [success]
+19:14:40.818652 [info ]: Finished rendering [  0.06s] (2 nodes, 0 skipped, 0 errors)
+19:14:40.818725 [debug]: Started analyzing model main.mart_customer_revenue
+19:14:40.825141 [debug]: Finished analyzing [  0.01s] model main.mart_customer_revenue [success]
+19:14:40.825282 [info ]: Finished analyzing [  0.07s] (2 nodes, 0 skipped, 0 errors)
+19:14:40.825350 [info ]: Started running model main.mart_customer_revenue
+19:14:40.829663 [debug]: Writing runtime sql for node "model.dagger_test.mart_customer_revenue"
+19:14:40.841753 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."mart_customer_revenue__dbt_tmp"
+  
+    as (
+      select
+    customer_id,
+    count(*) as nb_orders,
+    sum(amount) as total_revenue
+from "dev"."main"."stg_orders"
+where status = 'completed'
+group by customer_id
+    );
+  
+  
+19:14:40.846943 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      alter table "dev"."main"."mart_customer_revenue__dbt_tmp" rename to "mart_customer_revenue"
+    
+19:14:40.850498 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      drop table if exists "dev"."main"."mart_customer_revenue__dbt_backup" cascade
+    
+19:14:40.851347 [info ]: Finished running [  0.03s] model main.mart_customer_revenue [success]
+19:14:40.851441 [info ]: Finished running [  0.08s] (2 nodes, 0 skipped, 0 errors)
+19:14:40.851476 [info ]:  Succeeded [  0.03s] model main.mart_customer_revenue (table)
+19:14:40.959509 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:14:41.148909 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [744ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+==================== 2026-09-10T19:14:53.446384Z | 01a08cbe-8d84-7761-b123-bdc87a25b550 ====================
+19:14:53.446552 [info ]: dbt-fusion 2.0.0-preview.176
+19:14:53.447708 [info ]: Started loading project
+19:14:53.449369 [info ]: Loading profiles.yml
+19:14:53.463312 [debug]:    Started loading packages
+19:14:53.468421 [debug]:     Loaded [  0.01s] packages
+19:14:53.470583 [info ]: Finished loading project [  0.02s]
+19:14:53.471293 [info ]: Started parsing
+19:14:53.529766 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.00s]
+19:14:53.530579 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:14:53.534575 [info ]: Finished parsing [  0.06s]
+19:14:53.535012 [info ]: Started scheduling
+19:14:53.535161 [info ]: Finished scheduling [  0.00s]
+19:14:53.535243 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+19:14:54.541122 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:14:54.611008 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 warning for target 'dev' [1.2s]
+==================== 2026-09-10T19:15:06.098764Z | 01a08cbe-bef0-7190-a4f0-f745f0eaea7f ====================
+19:15:06.098946 [info ]: dbt-fusion 2.0.0-preview.176
+19:15:06.099298 [info ]: Started loading project
+19:15:06.100581 [info ]: Loading profiles.yml
+19:15:06.111943 [debug]:    Started loading packages
+19:15:06.113464 [debug]:     Loaded [  0.00s] packages
+19:15:06.114660 [info ]: Finished loading project [  0.02s]
+19:15:06.115337 [info ]: Started parsing
+19:15:06.181867 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.00s]
+19:15:06.183154 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:15:06.189245 [info ]: Finished parsing [  0.07s]
+19:15:06.192014 [info ]: Started scheduling
+19:15:06.192212 [info ]: Finished scheduling [  0.00s]
+19:15:06.420012 [info ]: Started building task graph
+19:15:06.420247 [info ]: Finished building task graph [  0.00s]
+19:15:06.460137 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+19:15:06.461994 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+19:15:06.463277 [debug]: Query executed on node unknown:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+19:15:06.463591 [info ]: Started rendering (3 nodes)
+19:15:06.463686 [info ]: Started seed main.raw_orders
+19:15:06.463705 [debug]: Started rendering seed main.raw_orders
+19:15:06.463813 [debug]: Finished rendering [  0.00s] seed main.raw_orders [success]
+19:15:06.463923 [info ]: Started running (3 nodes)
+19:15:06.463965 [info ]: Started running seed main.raw_orders
+19:15:06.493127 [debug]: Query executed on node seed.dagger_test.raw_orders:
+SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables WHERE table_schema = 'main'
+19:15:06.498448 [debug]: Query executed on node seed.dagger_test.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.dagger_test.raw_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+truncate table "dev"."main"."raw_orders"
+19:15:06.515375 [debug]: Query executed on node seed.dagger_test.raw_orders:
+
+          COPY "dev"."main"."raw_orders" FROM '/home/mballo/Projets/dagger_test/seeds/raw_orders.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+19:15:06.517101 [debug]: Writing runtime SQL for node "seed.dagger_test.raw_orders"
+19:15:06.519003 [info ]: Finished running [  0.06s] seed main.raw_orders [success]
+19:15:06.519106 [info ]:  Succeeded [  0.06s] seed  main.raw_orders (table)
+19:15:06.519190 [info ]: Started model main.stg_orders
+19:15:06.519212 [debug]: Started rendering model main.stg_orders
+19:15:06.520181 [debug]: Compiled SQL for node model.dagger_test.stg_orders at target/compiled/dagger_test/models/staging/stg_orders.sql
+19:15:06.520352 [debug]: Finished rendering [  0.00s] model main.stg_orders [success]
+19:15:06.520469 [info ]: Started analyzing (2 nodes)
+19:15:06.520534 [debug]: Started analyzing model main.stg_orders
+19:15:06.529611 [debug]: Finished analyzing [  0.01s] model main.stg_orders [success]
+19:15:06.529743 [info ]: Started running model main.stg_orders
+19:15:06.534654 [debug]: Writing runtime sql for node "model.dagger_test.stg_orders"
+19:15:06.539789 [debug]: Query executed on node model.dagger_test.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.stg_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+  
+  create view "dev"."main"."stg_orders__dbt_tmp" as (
+    select
+    order_id,
+    customer_id,
+    order_date,
+    amount,
+    status
+from "dev"."main"."raw_orders"
+  );
+
+19:15:06.544438 [debug]: Query executed on node model.dagger_test.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.stg_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      alter view "dev"."main"."stg_orders" rename to "stg_orders__dbt_backup"
+    
+19:15:06.548769 [debug]: Query executed on node model.dagger_test.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.stg_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      alter view "dev"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+    
+19:15:06.555463 [debug]: Query executed on node model.dagger_test.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.stg_orders", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      drop view if exists "dev"."main"."stg_orders__dbt_backup" cascade
+    
+19:15:06.556483 [info ]: Finished running [  0.03s] model main.stg_orders [success]
+19:15:06.556612 [info ]:  Succeeded [  0.04s] model main.stg_orders (view)
+19:15:06.556721 [info ]: Started model main.mart_customer_revenue
+19:15:06.556744 [debug]: Started rendering model main.mart_customer_revenue
+19:15:06.557714 [debug]: Compiled SQL for node model.dagger_test.mart_customer_revenue at target/compiled/dagger_test/models/marts/mart_customer_revenue.sql
+19:15:06.558196 [debug]: Finished rendering [  0.00s] model main.mart_customer_revenue [success]
+19:15:06.558324 [info ]: Finished rendering [  0.09s] (3 nodes, 0 skipped, 0 errors)
+19:15:06.558408 [debug]: Started analyzing model main.mart_customer_revenue
+19:15:06.564469 [debug]: Finished analyzing [  0.01s] model main.mart_customer_revenue [success]
+19:15:06.564584 [info ]: Finished analyzing [  0.04s] (2 nodes, 0 skipped, 0 errors)
+19:15:06.564657 [info ]: Started running model main.mart_customer_revenue
+19:15:06.569364 [debug]: Writing runtime sql for node "model.dagger_test.mart_customer_revenue"
+19:15:06.582556 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."mart_customer_revenue__dbt_tmp"
+  
+    as (
+      select
+    customer_id,
+    count(*) as nb_orders,
+    sum(amount) as total_revenue
+from "dev"."main"."stg_orders"
+where status = 'completed'
+group by customer_id
+    );
+  
+  
+19:15:06.586620 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_customer_revenue'
+  
+19:15:06.591186 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_customer_revenue'
+  
+19:15:06.596546 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      alter table "dev"."main"."mart_customer_revenue" rename to "mart_customer_revenue__dbt_backup"
+    
+19:15:06.601968 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      alter table "dev"."main"."mart_customer_revenue__dbt_tmp" rename to "mart_customer_revenue"
+    
+19:15:06.608693 [debug]: Query executed on node model.dagger_test.mart_customer_revenue:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.dagger_test.mart_customer_revenue", "profile_name": "dagger_test", "target_name": "dev"} */
+
+      drop table if exists "dev"."main"."mart_customer_revenue__dbt_backup" cascade
+    
+19:15:06.609842 [info ]: Finished running [  0.05s] model main.mart_customer_revenue [success]
+19:15:06.610107 [info ]: Finished running [  0.15s] (3 nodes, 0 skipped, 0 errors)
+19:15:06.610260 [info ]:  Succeeded [  0.05s] model main.mart_customer_revenue (table)
+19:15:06.817648 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:15:06.871104 [info ]: 
+==================== Execution Summary =====================
+Finished 'build' successfully for target 'dev' [772ms]
+Processed: 2 models | 1 seed
+Summary: 3 total | 3 success
+==================== 2026-09-10T19:32:10.656561Z | 01a08cce-611e-7d32-93f4-88b02fbbb4d3 ====================
+19:32:10.656717 [info ]: dbt-fusion 2.0.0-preview.176
+19:32:10.657094 [info ]: Started loading project
+19:32:10.658242 [info ]: Loading profiles.yml
+19:32:10.670688 [debug]:    Started loading packages
+19:32:10.672019 [debug]:     Loaded [  0.00s] packages
+19:32:10.673028 [info ]: Finished loading project [  0.02s]
+19:32:10.673496 [info ]: Started parsing
+19:32:10.738268 [debug]: Finished parsing models/schema.yml [  0.01s]
+19:32:10.750080 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.00s]
+19:32:10.751489 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:32:10.758247 [error]: dbt1159: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/schema.yml:16:23
+19:32:10.761261 [debug]: Finished parsing target/generic_tests/unique_mart_customer_revenue_customer_id.sql [  0.00s]
+19:32:10.762704 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_customer_id.sql [  0.00s]
+19:32:10.764077 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_total_revenue.sql [  0.00s]
+19:32:10.765404 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_customer_id.sql [  0.00s]
+19:32:10.766500 [debug]: Finished parsing target/generic_tests/unique_stg_orders_order_id.sql [  0.00s]
+19:32:10.767709 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_order_id.sql [  0.00s]
+19:32:10.769156 [debug]: Finished parsing target/generic_tests/accepted_values_stg_orders_c0c25593c42f49d1b02839a131e248ac.sql [  0.00s]
+19:32:10.776191 [info ]: Finished parsing [  0.10s]
+19:32:11.374696 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:32:11.424449 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+19:32:11.424449 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 error for target 'dev' [767ms]
+==================== 2026-09-10T19:34:57.641138Z | 01a08cd0-ed66-78d3-ae5b-9df4a426f858 ====================
+19:34:57.641309 [info ]: dbt-fusion 2.0.0-preview.176
+19:34:57.643232 [info ]: Started loading project
+19:34:57.648474 [info ]: Loading profiles.yml
+19:34:57.659080 [debug]:    Started loading packages
+19:34:57.660403 [debug]:     Loaded [  0.00s] packages
+19:34:57.661532 [info ]: Finished loading project [  0.02s]
+19:34:57.662144 [info ]: Started parsing
+19:34:57.716488 [debug]: Finished parsing models/schema.yml [  0.00s]
+19:34:57.717712 [error]: dbt1013: YAML error: columns[2].tests: data did not match any variant of untagged enum DataTests
+  --> models/schema.yml:15:13
+19:34:57.724984 [info ]: Finished parsing [  0.06s]
+19:34:58.254334 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:34:58.421082 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 error for target 'dev' [779ms]
+==================== 2026-09-10T19:35:31.677765Z | 01a08cd1-725b-75a1-a902-f7285293d29b ====================
+19:35:31.678107 [info ]: dbt-fusion 2.0.0-preview.176
+19:35:31.678674 [info ]: Started loading project
+19:35:31.679935 [info ]: Loading profiles.yml
+19:35:31.690880 [debug]:    Started loading packages
+19:35:31.692255 [debug]:     Loaded [  0.00s] packages
+19:35:31.693458 [info ]: Finished loading project [  0.01s]
+19:35:31.694091 [info ]: Started parsing
+19:35:31.748074 [debug]: Finished parsing models/schema.yml [  0.00s]
+19:35:31.753624 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.00s]
+19:35:31.754939 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:35:31.760054 [error]: dbt1159: Deprecated test arguments: ["argument"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/schema.yml:17:17
+19:35:31.763644 [debug]: Finished parsing target/generic_tests/unique_mart_customer_revenue_customer_id.sql [  0.00s]
+19:35:31.764816 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_customer_id.sql [  0.00s]
+19:35:31.765959 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_total_revenue.sql [  0.00s]
+19:35:31.767138 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_customer_id.sql [  0.00s]
+19:35:31.768182 [debug]: Finished parsing target/generic_tests/unique_stg_orders_order_id.sql [  0.00s]
+19:35:31.769198 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_order_id.sql [  0.00s]
+19:35:31.770086 [debug]: Finished parsing target/generic_tests/accepted_values_stg_orders_38ad25d7274b1a7f54a1c66e220ecd1d.sql [  0.00s]
+19:35:31.776379 [info ]: Finished parsing [  0.08s]
+19:35:32.345409 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:35:32.398754 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+19:35:32.398754 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 error for target 'dev' [720ms]
+==================== 2026-09-10T19:38:57.727464Z | 01a08cd4-973d-7f42-9e94-fb0e2ae35693 ====================
+19:38:57.727609 [info ]: dbt-fusion 2.0.0-preview.176
+19:38:57.728085 [info ]: Started loading project
+19:38:57.729520 [info ]: Loading profiles.yml
+19:38:57.740440 [debug]:    Started loading packages
+19:38:57.741726 [debug]:     Loaded [  0.00s] packages
+19:38:57.742727 [info ]: Finished loading project [  0.01s]
+19:38:57.743169 [info ]: Started parsing
+19:38:57.803050 [debug]: Finished parsing models/schema.yml [  0.00s]
+19:38:57.807423 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.00s]
+19:38:57.809415 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:38:57.815514 [error]: dbt1159: Deprecated test arguments: ["argument"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/schema.yml:17:17
+19:38:57.818474 [debug]: Finished parsing target/generic_tests/unique_mart_customer_revenue_customer_id.sql [  0.00s]
+19:38:57.819651 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_customer_id.sql [  0.00s]
+19:38:57.820529 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_total_revenue.sql [  0.00s]
+19:38:57.821366 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_customer_id.sql [  0.00s]
+19:38:57.822537 [debug]: Finished parsing target/generic_tests/unique_stg_orders_order_id.sql [  0.00s]
+19:38:57.824972 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_order_id.sql [  0.00s]
+19:38:57.826197 [debug]: Finished parsing target/generic_tests/accepted_values_stg_orders_38ad25d7274b1a7f54a1c66e220ecd1d.sql [  0.00s]
+19:38:57.831656 [info ]: Finished parsing [  0.09s]
+19:38:58.638667 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:38:58.696932 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+19:38:58.696932 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 error for target 'dev' [969ms]
+==================== 2026-09-10T19:41:08.310317Z | 01a08cd6-9554-70f2-94ff-853d8cbe4c63 ====================
+19:41:08.310487 [info ]: dbt-fusion 2.0.0-preview.176
+19:41:08.310837 [info ]: Started loading project
+19:41:08.312039 [info ]: Loading profiles.yml
+19:41:08.323193 [debug]:    Started loading packages
+19:41:08.324676 [debug]:     Loaded [  0.00s] packages
+19:41:08.325723 [info ]: Finished loading project [  0.01s]
+19:41:08.326217 [info ]: Started parsing
+19:41:08.380298 [debug]: Finished parsing models/schema.yml [  0.00s]
+19:41:08.383485 [debug]: Finished parsing models/marts/mart_customer_revenue.sql [  0.00s]
+19:41:08.384688 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+19:41:08.391988 [debug]: Finished parsing target/generic_tests/unique_mart_customer_revenue_customer_id.sql [  0.00s]
+19:41:08.392741 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_customer_id.sql [  0.00s]
+19:41:08.393425 [debug]: Finished parsing target/generic_tests/not_null_mart_customer_revenue_total_revenue.sql [  0.00s]
+19:41:08.394122 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_customer_id.sql [  0.00s]
+19:41:08.394824 [debug]: Finished parsing target/generic_tests/unique_stg_orders_order_id.sql [  0.00s]
+19:41:08.396807 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_order_id.sql [  0.00s]
+19:41:08.397660 [debug]: Finished parsing target/generic_tests/accepted_values_stg_orders_c0c25593c42f49d1b02839a131e248ac.sql [  0.00s]
+19:41:08.403088 [info ]: Finished parsing [  0.08s]
+19:41:08.403553 [info ]: Started scheduling
+19:41:08.403961 [info ]: Finished scheduling [  0.00s]
+19:41:08.404959 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "dev", schema: "main", table: "mart_customer_revenue" }) and interval: None
+19:41:08.405003 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "dev", schema: "main", table: "stg_orders" }) and interval: None
+19:41:08.627900 [info ]: Started building task graph
+19:41:08.628187 [info ]: Finished building task graph [  0.00s]
+19:41:08.628502 [info ]: Started rendering (7 nodes)
+19:41:08.628571 [info ]: Started test main_dbt_test__audit.unique_stg_orders_order_id
+19:41:08.628595 [debug]: Started rendering test main_dbt_test__audit.unique_stg_orders_order_id
+19:41:08.628635 [info ]: Started test main_dbt_test__audit.unique_mart_customer_revenue_customer_id
+19:41:08.628652 [debug]: Started rendering test main_dbt_test__audit.unique_mart_customer_revenue_customer_id
+19:41:08.628670 [info ]: Started test main_dbt_test__audit.not_null_stg_orders_order_id
+19:41:08.628681 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_orders_order_id
+19:41:08.628698 [info ]: Started test main_dbt_test__audit.not_null_stg_orders_customer_id
+19:41:08.628708 [debug]: Started rendering test main_dbt_test__audit.not_null_stg_orders_customer_id
+19:41:08.628727 [info ]: Started test main_dbt_test__audit.not_null_mart_customer_revenue_total_revenue
+19:41:08.628738 [debug]: Started rendering test main_dbt_test__audit.not_null_mart_customer_revenue_total_revenue
+19:41:08.628756 [info ]: Started test main_dbt_test__audit.not_null_mart_customer_revenue_customer_id
+19:41:08.628766 [debug]: Started rendering test main_dbt_test__audit.not_null_mart_customer_revenue_customer_id
+19:41:08.628784 [info ]: Started test main_dbt_test__audit.accepted_values_stg_orders_status__completed__cancelled__pending
+19:41:08.628794 [debug]: Started rendering test main_dbt_test__audit.accepted_values_stg_orders_status__completed__cancelled__pending
+19:41:08.630980 [debug]: Compiled SQL for node test.dagger_test.unique_stg_orders_order_id.e3b841c71a at target/compiled/dagger_test/target/generic_tests/unique_stg_orders_order_id.sql
+19:41:08.630980 [debug]: Compiled SQL for node test.dagger_test.unique_mart_customer_revenue_customer_id.97da55bad4 at target/compiled/dagger_test/target/generic_tests/unique_mart_customer_revenue_customer_id.sql
+19:41:08.630990 [debug]: Compiled SQL for node test.dagger_test.not_null_stg_orders_order_id.81cfe2fe64 at target/compiled/dagger_test/target/generic_tests/not_null_stg_orders_order_id.sql
+19:41:08.632271 [debug]: Compiled SQL for node test.dagger_test.not_null_mart_customer_revenue_customer_id.f463684890 at target/compiled/dagger_test/target/generic_tests/not_null_mart_customer_revenue_customer_id.sql
+19:41:08.632261 [debug]: Compiled SQL for node test.dagger_test.accepted_values_stg_orders_status__completed__cancelled__pending.ee383a7b32 at target/compiled/dagger_test/target/generic_tests/accepted_values_stg_orders_c0c25593c42f49d1b02839a131e248ac.sql
+19:41:08.632602 [debug]: Compiled SQL for node test.dagger_test.not_null_mart_customer_revenue_total_revenue.fc426a5091 at target/compiled/dagger_test/target/generic_tests/not_null_mart_customer_revenue_total_revenue.sql
+19:41:08.632969 [debug]: Finished rendering [  0.00s] test main_dbt_test__audit.unique_stg_orders_order_id [success]
+19:41:08.633107 [info ]: Started analyzing (7 nodes)
+19:41:08.633167 [debug]: Started analyzing test main_dbt_test__audit.unique_stg_orders_order_id
+19:41:08.633203 [debug]: Compiled SQL for node test.dagger_test.not_null_stg_orders_customer_id.af79d5e4b5 at target/compiled/dagger_test/target/generic_tests/not_null_stg_orders_customer_id.sql
+19:41:08.633215 [debug]: Finished rendering [  0.00s] test main_dbt_test__audit.unique_mart_customer_revenue_customer_id [success]
+19:41:08.633272 [debug]: Started analyzing test main_dbt_test__audit.unique_mart_customer_revenue_customer_id
+19:41:08.633935 [debug]: Finished rendering [  0.01s] test main_dbt_test__audit.not_null_mart_customer_revenue_customer_id [success]
+19:41:08.634027 [debug]: Started analyzing test main_dbt_test__audit.not_null_mart_customer_revenue_customer_id
+19:41:08.634054 [debug]: Finished rendering [  0.01s] test main_dbt_test__audit.not_null_stg_orders_order_id [success]
+19:41:08.634102 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_orders_order_id
+19:41:08.634122 [debug]: Finished rendering [  0.01s] test main_dbt_test__audit.not_null_mart_customer_revenue_total_revenue [success]
+19:41:08.634162 [debug]: Started analyzing test main_dbt_test__audit.not_null_mart_customer_revenue_total_revenue
+19:41:08.634179 [debug]: Finished rendering [  0.01s] test main_dbt_test__audit.not_null_stg_orders_customer_id [success]
+19:41:08.634219 [debug]: Started analyzing test main_dbt_test__audit.not_null_stg_orders_customer_id
+19:41:08.634237 [debug]: Finished rendering [  0.01s] test main_dbt_test__audit.accepted_values_stg_orders_status__completed__cancelled__pending [success]
+19:41:08.634272 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+19:41:08.634307 [debug]: Started analyzing test main_dbt_test__audit.accepted_values_stg_orders_status__completed__cancelled__pending
+19:41:08.641833 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.not_null_mart_customer_revenue_customer_id [success]
+19:41:08.647073 [info ]: Started running (7 nodes)
+19:41:08.647143 [info ]: Started running test main_dbt_test__audit.not_null_mart_customer_revenue_customer_id
+19:41:08.647197 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.unique_stg_orders_order_id [success]
+19:41:08.647258 [info ]: Started running test main_dbt_test__audit.unique_stg_orders_order_id
+19:41:08.647287 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.unique_mart_customer_revenue_customer_id [success]
+19:41:08.647335 [info ]: Started running test main_dbt_test__audit.unique_mart_customer_revenue_customer_id
+19:41:08.647354 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.not_null_stg_orders_order_id [success]
+19:41:08.647394 [info ]: Started running test main_dbt_test__audit.not_null_stg_orders_order_id
+19:41:08.647413 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.not_null_mart_customer_revenue_total_revenue [success]
+19:41:08.647450 [info ]: Started running test main_dbt_test__audit.not_null_mart_customer_revenue_total_revenue
+19:41:08.647473 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.not_null_stg_orders_customer_id [success]
+19:41:08.647511 [info ]: Started running test main_dbt_test__audit.not_null_stg_orders_customer_id
+19:41:08.647530 [debug]: Finished analyzing [  0.01s] test main_dbt_test__audit.accepted_values_stg_orders_status__completed__cancelled__pending [success]
+19:41:08.647562 [info ]: Finished analyzing [  0.01s] (7 nodes, 0 skipped, 0 errors)
+19:41:08.647592 [info ]: Started running test main_dbt_test__audit.accepted_values_stg_orders_status__completed__cancelled__pending
+19:41:08.650776 [debug]: Writing runtime sql for node "test.dagger_test.not_null_mart_customer_revenue_total_revenue.fc426a5091"
+19:41:08.652672 [debug]: Writing runtime sql for node "test.dagger_test.unique_mart_customer_revenue_customer_id.97da55bad4"
+19:41:08.652672 [debug]: Writing runtime sql for node "test.dagger_test.not_null_mart_customer_revenue_customer_id.f463684890"
+19:41:08.653187 [debug]: Writing runtime sql for node "test.dagger_test.not_null_stg_orders_customer_id.af79d5e4b5"
+19:41:08.655438 [debug]: Writing runtime sql for node "test.dagger_test.not_null_stg_orders_order_id.81cfe2fe64"
+19:41:08.656449 [debug]: Writing runtime sql for node "test.dagger_test.accepted_values_stg_orders_status__completed__cancelled__pending.ee383a7b32"
+19:41:08.656770 [debug]: Writing runtime sql for node "test.dagger_test.unique_stg_orders_order_id.e3b841c71a"
+19:41:08.704043 [debug]: Query executed on node test.dagger_test.not_null_mart_customer_revenue_customer_id.f463684890:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.dagger_test.not_null_mart_customer_revenue_customer_id.f463684890", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."mart_customer_revenue"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+19:41:08.704216 [debug]: Query executed on node test.dagger_test.not_null_mart_customer_revenue_total_revenue.fc426a5091:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.dagger_test.not_null_mart_customer_revenue_total_revenue.fc426a5091", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_revenue
+from "dev"."main"."mart_customer_revenue"
+where total_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+19:41:08.704717 [debug]: Query executed on node test.dagger_test.not_null_stg_orders_order_id.81cfe2fe64:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.dagger_test.not_null_stg_orders_order_id.81cfe2fe64", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "dev"."main"."stg_orders"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+19:41:08.704828 [debug]: Query executed on node test.dagger_test.unique_stg_orders_order_id.e3b841c71a:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.dagger_test.unique_stg_orders_order_id.e3b841c71a", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+19:41:08.705486 [debug]: Query executed on node test.dagger_test.not_null_stg_orders_customer_id.af79d5e4b5:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.dagger_test.not_null_stg_orders_customer_id.af79d5e4b5", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."stg_orders"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+19:41:08.705494 [debug]: Query executed on node test.dagger_test.unique_mart_customer_revenue_customer_id.97da55bad4:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.dagger_test.unique_mart_customer_revenue_customer_id.97da55bad4", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."mart_customer_revenue"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+19:41:08.705743 [debug]: Query executed on node test.dagger_test.accepted_values_stg_orders_status__completed__cancelled__pending.ee383a7b32:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.dagger_test.accepted_values_stg_orders_status__completed__cancelled__pending.ee383a7b32", "profile_name": "dagger_test", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "dev"."main"."stg_orders"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'completed','cancelled','pending'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+19:41:08.707451 [info ]: Finished running [  0.06s] test main_dbt_test__audit.accepted_values_stg_orders_status__completed__cancelled__pending [pass]
+19:41:08.708020 [info ]:     Passed [  0.08s] test  accepted_values_stg_orders_status__completed__cancelled__pending
+19:41:08.708410 [info ]: Finished running [  0.06s] test main_dbt_test__audit.not_null_mart_customer_revenue_customer_id [pass]
+19:41:08.708679 [info ]:     Passed [  0.07s] test  not_null_mart_customer_revenue_customer_id
+19:41:08.708941 [info ]: Finished running [  0.06s] test main_dbt_test__audit.unique_mart_customer_revenue_customer_id [pass]
+19:41:08.709006 [info ]:     Passed [  0.08s] test  unique_mart_customer_revenue_customer_id
+19:41:08.709204 [info ]: Finished running [  0.06s] test main_dbt_test__audit.not_null_mart_customer_revenue_total_revenue [pass]
+19:41:08.709412 [info ]:     Passed [  0.08s] test  not_null_mart_customer_revenue_total_revenue
+19:41:08.709465 [info ]: Finished running [  0.06s] test main_dbt_test__audit.not_null_stg_orders_order_id [pass]
+19:41:08.709502 [info ]:     Passed [  0.08s] test  not_null_stg_orders_order_id
+19:41:08.709542 [info ]: Finished running [  0.06s] test main_dbt_test__audit.unique_stg_orders_order_id [pass]
+19:41:08.709632 [info ]:     Passed [  0.08s] test  unique_stg_orders_order_id
+19:41:08.709737 [info ]: Finished running [  0.06s] test main_dbt_test__audit.not_null_stg_orders_customer_id [pass]
+19:41:08.709773 [info ]: Finished running [  0.06s] (7 nodes, 0 skipped, 0 errors)
+19:41:08.709800 [info ]:     Passed [  0.08s] test  not_null_stg_orders_customer_id
+19:41:09.094007 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+19:41:09.147787 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' successfully for target 'dev' [837ms]
+Processed: 7 tests
+Summary: 7 total | 7 success

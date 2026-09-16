@@ -12,7 +12,7 @@ container |
   with-mounted-cache /root/.cache/pip pip-cache-dbt |
   with-directory /project . --exclude=.venv --exclude=__pycache__ --exclude=.git |
   with-workdir /project |
-  with-exec -- pip install -r requirements.txt sqlfluff dbt-core |
+  with-exec -- pip install -r requirements.txt |
   with-exec -- sqlfluff lint models/ |
   with-exec -- dbt build --profiles-dir . |
   stdout

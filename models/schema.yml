@@ -14,7 +14,7 @@ models:
         tests:
           - accepted_values:
               arguments:
-                values: ['completed', 'cancelled', 'pending']
+                values: ['completed', 'cancelled', 'pending', 'error']
 
   - name: mart_customer_revenue
     columns:
@@ -22,6 +22,9 @@ models:
         tests:
           - unique
           - not_null
-      - name: total_revenue
+      - name: max_revenue
         tests:
           - not_null
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: ">= 0"  

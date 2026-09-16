@@ -3,3 +3,6 @@ target/
 __pycache__/
 *.duckdb
 .dagger/
+dbt_internal_packages/
+
+.bruin.yml
